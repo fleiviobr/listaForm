@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        .conteiner{
+            width: 100vh;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .box{
+            width: auto;
+            height: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        input{
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <h1>Escolha a opção desejada</h1>
+        <form action="form.php" method="get" class="box">
+            <div>
+                <input type="radio" name="operacao" value="soma">
+                <label>Somar</label>
+                <input type="radio" name="operacao" value="sub">
+                <label>Subtrair</label>
+                <input type="radio" name="operacao" value="mult">
+                <label>Multiplicar</label>
+                <input type="radio" name="operacao" value="div">
+                <label>Dividir</label>
+            </div>
+            <div>
+                <label for="n1">Numero 1:</label>
+                <input type="text" name="n1">
+            </div>
+            <div>
+                <label for="n2">Numero 2:</label>
+                <input type="text" name="n2">
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
