@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forms</title>
+    <title>Document</title>
     <style>
         .conteiner{
             width: 100vh;
@@ -36,29 +36,14 @@
     <div class="conteiner">
         <form action="form.php" method="get" class="box">
             <div>
-                <label for="text">Texto:</label>
-                <input type="text" name="text">
+                <label for="c1">Comprimento 1:</label>
+                <input type="text" name="c1">
             </div>
             <div>
-                <label for="textarea">TextArea:</label>
-                <textarea name="textarea" id="" cols="30" rows="5"></textarea>
+                <label for="c2">Comprimento 2:</label>
+                <input type="text" name="c2">
             </div>
-            <div>
-                <input type="checkbox" name="check">
-                <label for="check">Banana</label>
-            </div>
-            <div>
-                <input type="radio" name="radio">
-                <label for="radio">Abacate</label>
-            </div>
-            <div>
-                <select name="select">
-                    <option value="sim">Sim</option>
-                    <option value="nao">Não</option>
-                </select>
-            </div>
-            <button>Enviar</button>
+            <button type="submit">Enviar</button>
         </form>
-    </div>
 </body>
 </html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <style>
+        .conteiner{
+            width: 100vh;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .box{
+            width: auto;
+            height: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        input{
+            margin-top: 5px;
+        }
+        textarea{
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <form action="form.php" method="get" class="box">
+            <div>
+                <label for="text">Texto:</label>
+                <input type="text" name="text">
+            </div>
+            <div>
+                <label for="textarea">TextArea:</label>
+                <textarea name="textarea" id="" cols="30" rows="5"></textarea>
+            </div>
+            <div>
+                <input type="checkbox" name="check">
+                <label for="check">Banana</label>
+            </div>
+            <div>
+                <input type="radio" name="radio">
+                <label for="radio">Abacate</label>
+            </div>
+            <div>
+                <select name="select">
+                    <option value="sim">Sim</option>
+                    <option value="nao">Não</option>
+                </select>
+            </div>
+            <button type="subimt">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
