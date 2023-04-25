@@ -30,32 +30,42 @@
         textarea{
             margin-top: 5px;
         }
+        div{
+            margin-top: 5px;}
+        button{
+            margin-top: 15px;
+        }
     </style>
 </head>
 <body>
     
     <div class="conteiner">
+        <h1>Pastas com Imagens</h1>
         <form action="form.php" method="get" class="box">
             <div>
-                <label for="pront">Protuário :</label>
-                <input type="text" name="pront">
+                <label for="pasta">Escolha uma pasta:</label>
+                <select name="pasta">
+                    <option value="cachorros">Cachorros</option>
+                    <option value="gatos">Gatos</option>
+                    <option value="capivaras">Capivaras</option>
+                </select>
             </div>
             <div>
-                <label for="nome">Nome :</label>
-                <input type="text" name="nome">
-            </div>
-            <div>
-                <label for="idade">Idade :</label>
-                <input type="text" name="idade">
-            </div>
-            <div>
-                <label for="periodo">Período :</label>
-                <input type="text" name="periodo">
-            </div>
-            <div>
-                <label for="modulo">Módulo :</label>
-                <input type="text" name="modulo">
-            </div>
+                <label for="q">Escolha a quantidade de imagens:</label>
+                <select name="q">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>            
             <button type="submit">Enviar</button>
         </form>
 </body>
